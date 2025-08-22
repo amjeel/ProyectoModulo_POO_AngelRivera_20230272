@@ -12,7 +12,7 @@ import lombok.ToString;
 @Setter
 @ToString
 @EqualsAndHashCode
-public class librosDTO {
+public class LibrosDTO {
     private long id;
 
     @NotBlank(message = "el titulo no puede estar vacio")
@@ -24,4 +24,6 @@ public class librosDTO {
     private int año_publicacion;
     private String genero;
     private long idAutor;
+
+
 }

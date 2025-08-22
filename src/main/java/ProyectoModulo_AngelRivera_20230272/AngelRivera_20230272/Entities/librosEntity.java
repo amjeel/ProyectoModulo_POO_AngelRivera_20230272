@@ -7,15 +7,12 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Getter
-@Setter
-@ToString
-@EqualsAndHashCode
 @Table(name = "LIBROS")
+@Getter @Setter @ToString @EqualsAndHashCode
 public class librosEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,  generator = "seq_LIBROS")
-    @SequenceGenerator(sequenceName = "seq_LIBROS", name = "seq_LIBROS", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_LIBROS")
+    @SequenceGenerator(name = "seq_LIBROS", sequenceName = "seq_LIBROS", allocationSize = 1)
     @Column (name = "id")
     private long id;
     @Column(name = "titulo")
@@ -26,6 +23,6 @@ public class librosEntity {
     private int año_publicacion;
     @Column(name = "genero")
     private String genero;
-    @Column (name = "id")
+    @Column (name = "idAutor")
     private long idAutor;
 }

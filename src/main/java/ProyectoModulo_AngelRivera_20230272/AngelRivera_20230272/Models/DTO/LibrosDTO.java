@@ -1,13 +1,12 @@
 package ProyectoModulo_AngelRivera_20230272.AngelRivera_20230272.Models.DTO;
 
-import jakarta.persistence.Entity;
 import jakarta.validation.constraints.NotBlank;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@Entity
+
 @Getter
 @Setter
 @ToString
